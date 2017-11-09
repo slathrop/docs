@@ -35,6 +35,18 @@
                   'Removes content/window overflow detection'
                 ],
                 [
+                  'deletable-chips',
+                  'Boolean',
+                  'False',
+                  'Adds a remove icon to selected chips'
+                ],
+                [
+                  'open-on-clear',
+                  'Boolean',
+                  'False',
+                  'When using the <strong>clearable</strong> prop, once cleared, the select menu will either open or stay open, depending on the current state'
+                ],
+                [
                   'browser-autocomplete',
                   'String',
                   'on',

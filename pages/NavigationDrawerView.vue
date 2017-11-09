@@ -28,11 +28,6 @@
               file: 'navigation-drawers/permanent-floating',
               desc: 'A navigation drawer can be placed inside of a card and float over the content background.'
             },
-            // {
-            //   header: 'Floating drawer in a card',
-            //   file: 'navigation-drawers/permanent-floating-card',
-            //   desc: 'A card can be used to contain a navigation drawer\'s items.'
-            // },
             {
               header: 'Avatars',
               file: 'navigation-drawers/persistent',
@@ -66,7 +61,13 @@
                   'absolute',
                   'Boolean',
                   'False',
-                  'Sets the sidebar position to absolute',
+                  'Sets the navigation drawer position to absolute',
+                ],
+                [
+                  'absolute',
+                  'Boolean',
+                  'False',
+                  'Sets the navigation drawer position to fixed',
                 ],
                 [
                   'clipped',
@@ -78,10 +79,10 @@
                   'disable-route-watcher',
                   'Boolean',
                   'False',
-                  'Disables opening of Sidebar when route changes'
+                  'Disables opening of navigation drawer when route changes'
                 ],
                 [
-                  'enable-resize-watcher',
+                  'disable-resize-watcher',
                   'Boolean',
                   'False',
                   'Will automatically open/close drawer when resized depending if mobile or desktop.'
@@ -90,7 +91,7 @@
                   'height',
                   'String',
                   '100%',
-                  'Sets height of the sidebar',
+                  'Sets height of the navigation drawer',
                 ],
                 [
                   'floating',
@@ -102,7 +103,7 @@
                   'mini-variant',
                   'Boolean',
                   'False',
-                  'Condenses sidebar width, also accepts the <strong>.sync</strong> modifier. With this, the drawer will re-open when clicking it',
+                  'Condenses navigation drawer width, also accepts the <strong>.sync</strong> modifier. With this, the drawer will re-open when clicking it',
                 ],
                 [
                   'mini-variant-width',
@@ -123,16 +124,16 @@
                   'The drawer remains visible regardless of screen size'
                 ],
                 [
-                  'persistent',
+                  'stateless',
                   'Boolean',
                   'False',
-                  'A persistent drawer can be opened or closed'
+                  'Remove all automated state functionality (resize, mobile, route) and manually control the drawer state'
                 ],
                 [
                   'right',
                   'Boolean',
                   'False',
-                  'Places the sidebar on the right'
+                  'Places the navigation drawer on the right'
                 ],
                 [
                   'temporary',

@@ -27,7 +27,6 @@
           ],
           props: {
             'v-tabs': {
-              shared: ['theme'],
               params: [
                 [
                   'centered',
@@ -73,6 +72,7 @@
               }
             },
             'v-tabs-bar': {
+              shared: ['theme'],
               params: []
             },
             'v-tabs-items': {

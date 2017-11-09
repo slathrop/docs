@@ -18,6 +18,7 @@
           ],
           props: {
             'v-bottom-nav': {
+              shared: ['colorable'],
               model: {
                 type: ['Boolean'],
                 default: 'False'

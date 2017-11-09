@@ -22,6 +22,7 @@
           ],
           props: {
             'v-pagination': {
+              shared: ['colorable'],
               params: [
                 [
                   'circle',
