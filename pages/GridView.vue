@@ -29,7 +29,8 @@
       |       isMobile: false
       |    }),
       |    mounted () {
-      |      this.$vuetify.load(this.init)
+      |      this.onResize()
+      |      window.addEventListener('resize', this.onResize, { passive: true })
       |    },
       |    beforeDestroy () {
       |      if (typeof window !== 'undefined') {
@@ -37,10 +38,6 @@
       |      }
       |    },
       |    methods: {
-      |      init () {
-      |         this.onResize()
-      |         window.addEventListener('resize', this.onResize, { passive: true })
-      |      },
       |      onResize () {
       |         this.isMobile = window.innerWidth < 600
       |      }

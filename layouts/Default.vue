@@ -39,7 +39,7 @@
     }),
 
     mounted () {
-      this.$vuetify.load(this.onScroll)
+      this.onScroll()
     },
 
     methods: {
