@@ -11,29 +11,26 @@
       v-divider
       v-list.transparent
         v-list-tile
-          v-list-tile-avatar
-            v-avatar
-              v-icon fa-diamond
-          v-list-tile-title Diamond ($500/mo)
+          v-list-tile-title
+            strong Diamond ($500/mo)
       v-container(fluid grid-list-md).mb-5
         v-layout(row wrap justify-start align-center)
           a(
             :href="`${backer.href}?ref=vuetifyjs.com`"
             target="_blank"
             :title="backer.title"
-            v-for="backer in backers"
+            v-for="backer in diamond"
             v-bind:key="backer.title"
           ).text-xs-center.mx-3
             img(
               :src="`/static/doc-images/backers/${backer.src}`"
               :alt="backer.title"
             )
+
       v-list.transparent
         v-list-tile(tag="div")
-          v-list-tile-avatar
-            v-avatar
-              v-icon star
-          v-list-tile-title Gold ($50/mo)
+          v-list-tile-title
+            strong Palladium ($250/mo)
       v-container(fluid grid-list-md).mb-5
         v-layout(row wrap justify-start align-center)
           a(
@@ -41,7 +38,26 @@
             :class="[backer.dark ? 'black' : '']"
             :href="`${backer.href}?ref=vuetifyjs.com`"
             :title="backer.title"
-            v-for="backer in backers2"
+            v-for="backer in palladium"
+            v-bind:key="backer.title"
+          ).text-xs-center.mx-3
+            img(
+              :src="`/static/doc-images/backers/${backer.src}`"
+              :alt="backer.title"
+            )
+
+      v-list.transparent
+        v-list-tile(tag="div")
+          v-list-tile-title
+            strong Gold ($50/mo)
+      v-container(fluid grid-list-md).mb-5
+        v-layout(row wrap justify-start align-center)
+          a(
+            target="_blank"
+            :class="[backer.dark ? 'black' : '']"
+            :href="`${backer.href}?ref=vuetifyjs.com`"
+            :title="backer.title"
+            v-for="backer in gold"
             v-bind:key="backer.title"
           ).text-xs-center.mx-3
             img(
@@ -95,21 +111,26 @@
         { title: 'BrowserStack', href: 'https://www.browserstack.com/', src: 'browser-stack.png' },
         { title: 'Cloudflare', href: 'https://www.cloudflare.com/', src: 'cloudflare.svg' }
       ],
-      backers: [
+      palladium: [
+        { title: 'Intygrate', href: 'http://intygrate.com/', src: 'intygrate.png' },
+        { title: 'Eikos Partners', href: 'http://www.eikospartners.com/', src: 'eikos-partners.webp' },
+        { title: 'rateGenius', href: 'https://application.rategenius.com/', src: 'rate-genius.png' }
+      ],
+      diamond: [
         { title: 'LMAX Exchange', href: 'https://careers.lmax.com/?utm_source=vuetify&utm_medium=logo-link&utm_campaign=lmax-careers', src: 'lmax-exchange.png' }
       ],
-      backers2: [
+      gold: [
         { title: 'Deister Software', href: 'http://www.deister.es/', src: 'deister-logo-light.png' },
         { title: 'Cocoatech', href: 'https://cocoatech.com/', src: 'cocoatechlogo.png' },
         { title: 'Cycloid', href: 'https://www.cycloid.io/', src: 'cycloid.png' },
         { title: 'Live Casino', href: 'https://livecasino.com/', src: 'casino.webp', dark: true },
-        { title: 'Nate Controls', href: 'http://www.natecontrols.com/', src: 'n8controls.png' }
+        { title: 'Nate Controls', href: 'http://www.natecontrols.com/', src: 'n8controls.png' },
+        { title: 'Trek10', href: 'https://www.trek10.com/', src: 'trek10.svg' }
       ],
       affiliates: [
         { title: 'VueJobs', href: 'https://vuejobs.com/?utm_source=vuejobs&utm_medium=affiliates&utm_campaign=linking', noref: true, src: 'vuejobs-logo.svg' },
-        { title: 'Vue.js Developers', href: 'https://vuejsdevelopers.com', src: 'vuejsdevelopers.png' },
         { title: 'Made with Vue.js', href: 'https://madewithvuejs.com', src: 'madewithvuejs.png' },
-        { title: 'Vue.js Radar', href: 'https://vuejsradar.com', src: 'vueradar.png' }
+        { title: 'Vue.js Radar', href: 'https://vuejsradar.com', src: 'vueradar2.png' }
       ]
     })
   }
