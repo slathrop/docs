@@ -1,11 +1,10 @@
 <template>
   <v-app id="inspire">
     <v-navigation-drawer
-      persistent
+      fixed
       v-model="drawerRight"
       right
       clipped
-      enable-resize-watcher
       app
     >
       <v-list dense>
@@ -32,9 +31,8 @@
       <v-toolbar-side-icon @click.stop="drawerRight = !drawerRight"></v-toolbar-side-icon>
     </v-toolbar>
     <v-navigation-drawer
-      persistent
+      fixed
       v-model="drawer"
-      enable-resize-watcher
       app
     >
       <v-list dense>

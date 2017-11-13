@@ -10,7 +10,6 @@
       :mini-variant="primaryDrawer.mini"
       absolute
       overflow
-      enable-resize-watcher
       app
     ></v-navigation-drawer>
     <v-toolbar app absolute :clipped-left="primaryDrawer.clipped">

@@ -2,6 +2,7 @@
   <v-app id="inspire">
     <v-navigation-drawer
       permanent
+      fixed
       clipped
       class="grey lighten-4"
       app

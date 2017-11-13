@@ -2,9 +2,8 @@
   <v-app id="inspire" dark>
     <v-navigation-drawer
       clipped
-      persistent
+      fixed
       v-model="drawer"
-      enable-resize-watcher
       app
     >
       <v-list dense>

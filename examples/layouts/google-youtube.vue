@@ -4,9 +4,8 @@
     id="inspire"
   >
     <v-navigation-drawer
-      persistent
+      fixed
       clipped
-      enable-resize-watcher
       v-model="drawer"
       app
     >
