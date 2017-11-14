@@ -38,7 +38,7 @@
         |   }
         |})
       section-text Under the hood, Vuetify will generate css classes based upon these values that will be accessible in the DOM. These classes will follow the same markup as other helper classes, <code>primary</code> or <code>secondary--text</code> for example.
-      section-text These values will also be made available on the instance <strong>$vuetify</strong> object under the <strong>theme</strong> property. This allows you to <em>dynamically</em> modify your theme. Behind the scenes, Vuetify will regenerate and update your theme classes, seemlessly updating your application.
+      section-text These values will also be made available on the instance <strong>$vuetify</strong> object under the <strong>theme</strong> property. This allows you to <em>dynamically</em> modify your theme. Behind the scenes, Vuetify will regenerate and update your theme classes, seamlessly updating your application.
       markup(lang="javascript")
         |this.$vuetify.theme.primary = '#4caf50'
 </template>
