@@ -64,7 +64,7 @@
                   'Sets the navigation drawer position to absolute',
                 ],
                 [
-                  'absolute',
+                  'fixed',
                   'Boolean',
                   'False',
                   'Sets the navigation drawer position to fixed',
