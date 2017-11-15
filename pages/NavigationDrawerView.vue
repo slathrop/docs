@@ -3,7 +3,6 @@
 </template>
 
 <script>
-
   export default {
     data () {
       return {
@@ -11,7 +10,11 @@
           title: 'Navigation drawer',
           edit: 'NavigationDrawerView',
           component: 'VNavigationDrawer',
-          desc: 'The <code>v-navigation-drawer</code> component is what your users will utilize to navigate through the application. The navigation-drawer is pre-configured to work with or without <strong>vue-router</strong> right out the box.',
+          desc: `
+The <code>v-navigation-drawer</code> component is what your users will utilize to navigate through the application.
+The navigation-drawer is pre-configured to work with or without <strong>vue-router</strong> right out the box.
+<br>
+For most application-level drawers, you will want to use either <code>absolute</code> or <code>fixed</code> to get the correct positioning.`,
           examples: [
             {
               header: 'Default',
