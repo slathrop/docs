@@ -120,6 +120,13 @@
           this.findMissed(params)
         }
 
+        if (this.type !== 'props') {
+          return params.map(d => ({
+            name: `<code>${d[0]}</code>`,
+            description: d[1]
+          }))
+        }
+
         return params.map(d => {
           return {
             prop: `<code>${d[0]}</code>`,
