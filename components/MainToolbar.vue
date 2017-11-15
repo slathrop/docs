@@ -38,6 +38,7 @@
         key="search"
         v-model="search"
         ref="search"
+        light
       )
 </template>
 
