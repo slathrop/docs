@@ -144,12 +144,6 @@
                   'Boolean',
                   'False',
                   'Designates the table as containing rows that are expandable'
-                ],
-                [
-                  'item-key',
-                  '[String, Number]',
-                  'id',
-                  'The field in the item object that designates a unique key'
                 ]
               ],
               model: {
