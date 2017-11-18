@@ -69,30 +69,33 @@
       clipped-left
       fixed
     >
-      <v-toolbar-title style="width: 300px" class="ml-0 pl-3">
+      <v-toolbar-title :style="$vuetify.breakpoint.smAndUp ? 'width: 300px; min-width: 250px' : 'min-width: 72px'" class="ml-0 pl-3">
         <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
-        Google Contacts
+        <span class="hidden-xs-only">Google Contacts</span>
       </v-toolbar-title>
       <v-text-field
+        light
         solo
         prepend-icon="search"
         placeholder="Search"
+        style="max-width: 500px; min-width: 128px"
       ></v-text-field>
-      <v-spacer></v-spacer>
-      <v-btn icon>
-        <v-icon>apps</v-icon>
-      </v-btn>
-      <v-btn icon>
-        <v-icon>notifications</v-icon>
-      </v-btn>
-      <v-btn icon large>
-        <v-avatar size="32px" tile>
-          <img
-            src="https://vuetifyjs.com/static/doc-images/logo.svg"
-            alt="Vuetify"
-          >
-        </v-avatar>
-      </v-btn>
+      <div class="d-flex align-center" style="margin-left: auto">
+        <v-btn icon>
+          <v-icon>apps</v-icon>
+        </v-btn>
+        <v-btn icon>
+          <v-icon>notifications</v-icon>
+        </v-btn>
+        <v-btn icon large>
+          <v-avatar size="32px" tile>
+            <img
+              src="https://vuetifyjs.com/static/doc-images/logo.svg"
+              alt="Vuetify"
+            >
+          </v-avatar>
+        </v-btn>
+      </div>
     </v-toolbar>
     <v-content>
       <v-container fluid fill-height>
@@ -187,7 +190,7 @@
   export default {
     data: () => ({
       dialog: false,
-      drawer: true,
+      drawer: null,
       items: [
         { icon: 'contacts', text: 'Contacts' },
         { icon: 'history', text: 'Frequently contacted' },

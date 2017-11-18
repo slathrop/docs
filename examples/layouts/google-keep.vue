@@ -1,9 +1,9 @@
 <template>
   <v-app id="inspire">
     <v-navigation-drawer
-      permanent
       fixed
-      clipped
+      :clipped="$vuetify.breakpoint.width > 1264"
+      v-model="drawer"
       class="grey lighten-4"
       app
     >
@@ -51,6 +51,7 @@
       </v-list>
     </v-navigation-drawer>
     <v-toolbar color="amber" app absolute clipped-left>
+      <v-toolbar-side-icon v-if="$vuetify.breakpoint.width <= 1264" @click="drawer = !drawer"></v-toolbar-side-icon>
       <span class="title">Google&nbsp;<span class="text">Keep</span></span>
     </v-toolbar>
     <v-content>
@@ -71,6 +72,7 @@
 <script>
   export default {
     data: () => ({
+      drawer: null,
       items: [
         { icon: 'lightbulb_outline', text: 'Notes' },
         { icon: 'touch_app', text: 'Reminders' },

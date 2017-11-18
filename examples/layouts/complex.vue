@@ -3,6 +3,7 @@
     <v-navigation-drawer
       fixed
       v-model="drawerRight"
+      :stateless="right"
       right
       clipped
       app
@@ -33,6 +34,7 @@
     <v-navigation-drawer
       fixed
       v-model="drawer"
+      :stateless="left"
       app
     >
       <v-list dense>
@@ -80,8 +82,8 @@
 <script>
   export default {
     data: () => ({
-      drawer: true,
-      drawerRight: true,
+      drawer: null,
+      drawerRight: null,
       right: null,
       left: null
     }),

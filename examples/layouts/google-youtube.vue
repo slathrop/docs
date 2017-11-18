@@ -5,7 +5,7 @@
   >
     <v-navigation-drawer
       fixed
-      clipped
+      :clipped="$vuetify.breakpoint.width > 1264"
       v-model="drawer"
       app
     >
@@ -44,7 +44,11 @@
       </v-list>
     </v-navigation-drawer>
     <v-toolbar color="red" dense fixed clipped-left app>
-      <v-toolbar-title style="width: 300px" class="ml-0 pl-3">
+      <v-toolbar-title
+        :style="$vuetify.breakpoint.width > 1264 && 'width: 300px'"
+        class="ml-0 pl-3"
+        :class="$vuetify.breakpoint.width <= 1264 && 'pr-3'"
+      >
         <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
         <v-icon class="ml-3">fa-youtube</v-icon>
       </v-toolbar-title>
@@ -77,7 +81,7 @@
 <script>
   export default {
     data: () => ({
-      drawer: true,
+      drawer: null,
       items: [
         { icon: 'trending_up', text: 'Most Popular' },
         { icon: 'subscriptions', text: 'Subscriptions' },

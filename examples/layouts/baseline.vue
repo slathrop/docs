@@ -52,7 +52,7 @@
 <script>
   export default {
     data: () => ({
-      drawer: true
+      drawer: null
     }),
     props: {
       source: String
