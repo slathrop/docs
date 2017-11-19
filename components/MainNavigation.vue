@@ -38,21 +38,33 @@
                     v-list-tile-title {{ release }}
     v-divider
     v-layout(justify-center wrap).pt-3
-      a(
-        href="https://careers.lmax.com/?utm_source=vuetify&utm_medium=logo-link&utm_campaign=lmax-careers"
-        target="_blank"
-        rel="noopener"
-      )
-        v-card(flat hover light).your-logo-here
-          v-card-text
-            v-layout(justify-center)
-              v-flex.text-xs-center
-                div.body-2.mb-2 Diamond Sponsor
+      v-card(flat light).your-logo-here
+        v-card-text
+          v-layout(justify-center)
+            v-flex.text-xs-center
+              div.body-2.mb-4 Diamond Sponsors
+              a(
+                href="https://careers.lmax.com/?utm_source=vuetify&utm_medium=logo-link&utm_campaign=lmax-careers"
+                target="_blank"
+                rel="noopener"
+              )
                 img(
-                  width="150px"
+                  width="115px"
                   src="/static/doc-images/backers/lmax-exchange.png"
                   alt="LMAX Exchange"
                   title="LMAX Exchange"
+                ).mb-3
+              br
+              a(
+                href="http://intygrate.com/?ref=vuetifyjs.com"
+                target="_blank"
+                rel="noopener"
+              )
+                img(
+                  width="115px"
+                  src="/static/doc-images/backers/intygrate.png"
+                  alt="intygrate"
+                  title="intygrate"
                 )
     v-layout(row justify-center wrap).pt-4
       v-badge(right overlap color="red")

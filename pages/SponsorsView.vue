@@ -112,12 +112,12 @@
         { title: 'Cloudflare', href: 'https://www.cloudflare.com/', src: 'cloudflare.svg' }
       ],
       palladium: [
-        { title: 'Intygrate', href: 'http://intygrate.com/', src: 'intygrate.png' },
         { title: 'Eikos Partners', href: 'http://www.eikospartners.com/', src: 'eikos-partners.webp' },
         { title: 'rateGenius', href: 'https://application.rategenius.com/', src: 'rate-genius.png' }
       ],
       diamond: [
-        { title: 'LMAX Exchange', href: 'https://careers.lmax.com/?utm_source=vuetify&utm_medium=logo-link&utm_campaign=lmax-careers', src: 'lmax-exchange.png' }
+        { title: 'LMAX Exchange', href: 'https://careers.lmax.com/?utm_source=vuetify&utm_medium=logo-link&utm_campaign=lmax-careers', src: 'lmax-exchange.png' },
+        { title: 'Intygrate', href: 'http://intygrate.com/', src: 'intygrate.png' }
       ],
       gold: [
         { title: 'Deister Software', href: 'http://www.deister.es/', src: 'deister-logo-light.png' },
