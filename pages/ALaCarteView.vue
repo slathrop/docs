@@ -68,9 +68,7 @@
       v-alert(value color="info" icon="info").mb-4 For a more detailed explanation on how to setup your application to handle stylus, please navigate to the <router-link to="/style/theme" class="white--text">theme page</router-link>.
       section-text Now you will need to require the stylus from the entry point of your application. This is the same place where you're importing Vue and Vuetify (usually <kbd>main.js</kbd> or <kbd>app.js</kbd>):
       markup(lang="js")
-        |require('../../node_modules/vuetify/src/stylus/app.styl')
-
-      section-text Keep in mind that the beginning <code>'../../node_modules'</code> of the path may differ in your project.
+        |require('vuetify/src/stylus/app.styl')
 
     section
       section-header Theming
