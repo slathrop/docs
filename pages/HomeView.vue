@@ -178,6 +178,16 @@
       return {
         sponsors: [
           {
+            title: 'LMAX Exchange',
+            href: 'https://careers.lmax.com/?utm_source=vuetify&utm_medium=logo-link&utm_campaign=lmax-careers',
+            src: '/static/doc-images/backers/lmax-exchange.png'
+          },
+          {
+            title: 'intygrate',
+            href: 'http://intygrate.com/?ref=vuetifyjs.com',
+            src: '/static/doc-images/backers/intygrate.png'
+          },
+          {
             title: 'BrowserStack',
             href: 'https://www.browserstack.com/',
             src: '/static/doc-images/browser-stack.svg'
@@ -186,11 +196,6 @@
             title: 'Cloudflare',
             href: 'https://www.cloudflare.com/',
             src: '/static/doc-images/cloudflare.svg'
-          },
-          {
-            title: 'LMAX Exchange',
-            href: 'https://careers.lmax.com/?utm_source=vuetify&utm_medium=logo-link&utm_campaign=lmax-careers',
-            src: '/static/doc-images/backers/lmax-exchange.png'
           }
         ],
         toolbar: false
