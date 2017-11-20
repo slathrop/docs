@@ -72,6 +72,7 @@
   export default {
     data () {
       return {
+        isBooted: false,
         tabs: ['template', 'script', 'style'],
         component: null,
         instance: null,
@@ -107,6 +108,11 @@
     watch: {
       panel () {
         this.$refs.tabs.slider()
+
+        if (!this.isBooted) {
+          this.request(this.file, this.boot)
+          this.isBooted = true
+        }
       }
     },
 
@@ -125,7 +131,6 @@
         this.instance = new Vue(comp)
         this.instance.$mount('#example-'+vm.uid)
       })
-      this.request(this.file, this.boot)
     },
 
     methods: {
