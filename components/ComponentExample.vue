@@ -107,9 +107,7 @@
 
     watch: {
       panel () {
-        this.$refs.tabs.slider()
-
-        this.getMarkup()
+        this.getMarkup().then(() => this.$refs.tabs.slider())
       }
     },
 
