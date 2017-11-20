@@ -34,12 +34,6 @@
       MainFooter
     },
 
-    name: 'default-layout',
-
-    props: ['fullPath'],
-
-    serverCacheKey: props => props.fullPath,
-
     data: () => ({
       fab: false
     }),

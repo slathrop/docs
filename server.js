@@ -85,11 +85,11 @@ Object.keys(redirects).forEach(k => {
   })
 })
 
-// 15-second microcache.
+// 15-minute microcache.
 // https://www.nginx.com/blog/benefits-of-microcaching-nginx/
 const microCache = LRU({
   max: 100,
-  maxAge: 15 * 1000
+  maxAge: 15 * 60 * 1000
 })
 
 // since this app has no user-specific content, every page is micro-cacheable.

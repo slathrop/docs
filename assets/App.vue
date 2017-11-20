@@ -1,7 +1,7 @@
 <template lang="pug">
   div#app
     v-fade-transition(mode="out-in")
-      component(:is="component" :fullPath="$router.fullPath")
+      component(:is="component")
         slot
 </template>
 
