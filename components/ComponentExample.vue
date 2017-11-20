@@ -128,7 +128,7 @@
         /* webpackMode: "lazy-once" */
         `../examples/${this.file}.vue`
       ).then(comp => {
-        this.instance = new Vue(comp)
+        this.instance = new Vue(comp.default)
         this.instance.$mount('#example-'+vm.uid)
       })
     },

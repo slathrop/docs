@@ -8,13 +8,17 @@
 <script>
   const meta = require('../router/meta.json')
 
+  import Default from 'layouts/Default'
+  import Example from 'layouts/Example'
+  import Home from 'layouts/Home'
+
   export default {
     name: 'App',
 
     components: {
-      default: require('layouts/Default'),
-      example: require('layouts/Example'),
-      home: require('layouts/Home')
+      Default,
+      Example,
+      Home
     },
 
     data () {
