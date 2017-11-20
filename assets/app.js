@@ -7,10 +7,19 @@ import App from './App.vue'
 import Vuetify from 'vuetify'
 import VeeValidate from 'vee-validate'
 import Components from '../components'
+import axios from 'axios'
 
 import { createStore } from 'store/index'
 import { createRouter } from 'router/index'
 import { sync } from 'vuex-router-sync'
+
+const instance = axios.create({
+  // change this url to your api
+  // baseURL: '//localhost:8889/',
+  baseURL: '/'
+})
+
+Vue.prototype.$http = instance
 
 Vue.use(Vuetify, {
   theme: {

@@ -109,10 +109,7 @@
       panel () {
         this.$refs.tabs.slider()
 
-        if (!this.isBooted) {
-          this.request(this.file, this.boot)
-          this.isBooted = true
-        }
+        this.getMarkup()
       }
     },
 
@@ -134,6 +131,14 @@
     },
 
     methods: {
+      getMarkup () {
+        if (!this.isBooted) {
+          this.isBooted = true
+          return this.request(this.file, this.boot)
+        }
+
+        return Promise.resolve()
+      },
       getLang (tab) {
         if (tab === 'script') return 'js'
         if (tab === 'style') return 'css'
@@ -172,22 +177,16 @@
         this.active = !this.active
       },
       request (file, cb) {
-        const xmlhttp = new XMLHttpRequest()
-        const vm = this
-        const timeout = setTimeout(() => this.loading = true, 500)
-        xmlhttp.open('GET', `/${this.url}example-source/${file}.vue`, true)
+        this.loading = true
+        return this.$http.get(`/${this.url}example-source/${file}.vue`).then(({ data }) => {
+          cb(data)
+          this.loading = false
 
-        xmlhttp.onreadystatechange = function () {
-          if(xmlhttp.status == 200 && xmlhttp.readyState == 4) {
-            clearTimeout(timeout)
-            vm.loading = false
-            cb(xmlhttp.responseText)
-          }
-        }
-        xmlhttp.send()
+          return Promise.resolve()
+        })
       },
       sendToCodepen () {
-        this.$refs.codepen.submit()
+        this.getMarkup().then(() => this.$refs.codepen.submit())
       }
     }
   }
