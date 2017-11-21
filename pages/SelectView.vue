@@ -41,6 +41,12 @@
                   'Adds a remove icon to selected chips'
                 ],
                 [
+                  'dense',
+                  'Boolean',
+                  'False',
+                  'Lowers max height of list items'
+                ],
+                [
                   'open-on-clear',
                   'Boolean',
                   'False',
