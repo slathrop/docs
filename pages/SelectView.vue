@@ -35,6 +35,12 @@
                   'Removes content/window overflow detection'
                 ],
                 [
+                  'content-class', 
+                  'String', 
+                  '-', 
+                  'Applies a custom class to the select menu. This is useful because the menu content is moved to the end of the app and is not targettable by classes passed directly on the select component.'
+                ],
+                [
                   'deletable-chips',
                   'Boolean',
                   'False',
