@@ -66,46 +66,13 @@
         |# or
         |yarn add --dev stylus stylus-loader
       v-alert(value color="info" icon="info").mb-4 For a more detailed explanation on how to setup your application to handle stylus, please navigate to the <router-link to="/style/theme" class="white--text">theme page</router-link>.
-      section-text Now you will need a main entry point for the stylus file. Even if you don't use/understand stylus, don't worry! Just create a <kbd>main.styl</kbd> file in your assets directory. Once created, open it and add this line:
-      markup(lang="stylus")
-        |@import '../../node_modules/vuetify/src/stylus/app'
-
-      section-text Keep in mind that the beginning <code>'../../node_modules'</code> of the path may differ in your project.
+      section-text Now you will need to require the stylus from the entry point of your application. This is the same place where you're importing Vue and Vuetify (usually <kbd>main.js</kbd> or <kbd>app.js</kbd>):
+      markup(lang="js")
+        |require('vuetify/src/stylus/app.styl')
 
     section
       section-header Theming
-      section-text In order to use a-la-carte components with custom color themes you will need to install the <code>vuetify-loader</code> package.
-
-      markup(lang="bash")
-        |npm install --save-dev vuetify-loader
-        |# or
-        |yarn add --dev vuetify-loader
-
-      section-text Next, you will need to edit your webpack configuration to use the vuetify loader for all <code>.styl</code> files. The following is an example configuration from the <code>a-la-carte</code> template.
-      markup(lang="cli")
-        |{
-        |  test: /\.styl$/,
-        |  loader: ['style-loader', 'css-loader', 'stylus-loader', {
-        |    loader: 'vuetify-loader',
-        |    options: {
-        |      theme: resolve('./src/stylus/theme.styl')
-        |    }
-        |  }]
-        |}
-
-      section-text The file you specify in the <strong>theme</strong> option will be included at the top of every <code>.styl</code> file so that your theme colors will be correctly set for all components. See below for an example of such a file.
-      markup(lang="stylus")
-        |@import '../../node_modules/vuetify/src/stylus/settings/_colors'
-        |
-        |$theme := {
-        |  primary: $green.darken-2
-        |  accent: $red.accent-2
-        |  secondary: $cyan.darken-3
-        |  info: $blue.base
-        |  warning: $amber.base
-        |  error: $red.base
-        |  success: $purple.base
-        |}
+      section-text Using custom themes with a-la-carte components is done exactly the same way as described on the <router-link to="/style/theme">theme page</router-link>.
 
 </template>
 
