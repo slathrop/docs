@@ -63,6 +63,7 @@
             img(
               :src="`/static/doc-images/backers/${backer.src}`"
               :alt="backer.title"
+              style="max-width: 175px;"
             )
 
       h2.headline Affiliates:
@@ -80,7 +81,7 @@
             img(
               :src="`/static/doc-images/affiliates/${affiliate.src}`"
               :alt="affiliate.title"
-              width="150px"
+              style="max-width: 175px;"
             )
 
       h2.headline Service sponsors:
@@ -113,7 +114,8 @@
       ],
       palladium: [
         { title: 'Eikos Partners', href: 'http://www.eikospartners.com/', src: 'eikos-partners.webp' },
-        { title: 'rateGenius', href: 'https://application.rategenius.com/', src: 'rate-genius.png' }
+        { title: 'rateGenius', href: 'https://application.rategenius.com/', src: 'rate-genius.png' },
+        { title: 'quitt', href: 'https://quitt.ch/', src: 'quitt.png' }
       ],
       diamond: [
         { title: 'LMAX Exchange', href: 'https://careers.lmax.com/?utm_source=vuetify&utm_medium=logo-link&utm_campaign=lmax-careers', src: 'lmax-exchange.png' },
