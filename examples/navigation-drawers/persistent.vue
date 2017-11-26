@@ -1,5 +1,5 @@
 <template>
-  <v-navigation-drawer stateless absolute light v-model="drawer" overflow>
+  <v-navigation-drawer permanent light>
     <v-toolbar flat class="transparent">
       <v-list class="pa-0">
         <v-list-tile avatar>
@@ -30,12 +30,10 @@
   export default {
     data () {
       return {
-        drawer: true,
         items: [
           { title: 'Home', icon: 'dashboard' },
           { title: 'About', icon: 'question_answer' }
-        ],
-        right: null
+        ]
       }
     }
   }

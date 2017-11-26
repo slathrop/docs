@@ -1,5 +1,5 @@
 <template>
-  <v-navigation-drawer stateless permanent floating light class="transparent" value="true">
+  <v-navigation-drawer permanent floating light class="transparent">
     <v-card class="ma-3">
       <v-list dense class="py-0">
         <v-list-tile v-for="item in items" :key="item.title" @click="">
@@ -22,8 +22,7 @@
         items: [
           { title: 'Home', icon: 'dashboard' },
           { title: 'About', icon: 'question_answer' }
-        ],
-        right: null
+        ]
       }
     }
   }

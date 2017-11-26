@@ -1,6 +1,6 @@
 <template>
   <v-card class="d-inline-block pa-5">
-    <v-navigation-drawer stateless permanent floating light value="true">
+    <v-navigation-drawer permanent floating light>
       <v-list dense class="pt-0">
         <v-list-tile v-for="item in items" :key="item.title" @click="">
           <v-list-tile-action>
@@ -22,8 +22,7 @@
         items: [
           { title: 'Home', icon: 'dashboard' },
           { title: 'About', icon: 'question_answer' }
-        ],
-        right: null
+        ]
       }
     }
   }
