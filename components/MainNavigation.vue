@@ -67,15 +67,14 @@
                   title="intygrate"
                 )
     v-layout(row justify-center wrap).pt-4
-      v-badge(right overlap color="red")
-        v-icon(slot="badge" dark right) plus_one
-        v-btn(
-          dark
-          href="https://github.com/vuetifyjs/vuetify/issues/2240"
-          target="_blank"
-          rel="noopener"
-        ).blue.lighten-2
-          span Exciting Announcement
+      v-btn(
+        dark
+        href="https://www.rafflecopter.com/rafl/display/f34912162/?widget_template=5a2166cc8a060bf50df94b01"
+        target="_blank"
+        rel="noopener"
+      ).blue.lighten-2
+        span Developer Giveaway
+        v-icon(right) mdi-cake-layered
       v-tooltip(
         v-for="social in socials"
         v-bind:key="social.icon"

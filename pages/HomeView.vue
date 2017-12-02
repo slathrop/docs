@@ -55,6 +55,24 @@
                 ).primary--text
                   v-icon(left).primary--text fa-github
                   span Github
+    section#new-release.text-xs-center
+      v-card(tile flat color="secondary" dark)
+        v-card-text
+          span.subheading v1.0 alpha has been released!
+          v-btn(
+            color="white"
+            class="primary--text"
+            light
+            href="https://github.com/vuetifyjs/vuetify/releases/tag/v1.0.0-alpha.1"
+            target="_blank"
+          ).ml-4 Learn more
+          v-btn(
+            color="white"
+            class="primary--text"
+            light
+            href="https://next.vuetifyjs.com"
+            target="_blank"
+          ) 1.0 docs
 
     div#section-body
       section#features.mb-3

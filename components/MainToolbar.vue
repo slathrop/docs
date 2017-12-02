@@ -17,6 +17,12 @@
           v-bind:key="$store.state.h1"
           class="d-flex"
         )
+      v-spacer
+      v-btn(
+        color="white"
+        href="https://github.com/vuetifyjs/vuetify/releases/tag/v1.0.0-alpha.1"
+        target="_blank"
+      ).hidden-xs-only.mr-3.primary--text v1.0 alpha released!
     v-toolbar(
       :color="$store.state.currentColor"
       fixed
