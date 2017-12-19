@@ -69,7 +69,7 @@
     v-layout(row justify-center wrap).pt-4
       v-btn(
         dark
-        href="/vuetify/sponsors-and-backers"
+        to="/vuetify/sponsors-and-backers"
         round
         small
         outline          
