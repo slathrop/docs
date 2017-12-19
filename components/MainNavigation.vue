@@ -69,12 +69,13 @@
     v-layout(row justify-center wrap).pt-4
       v-btn(
         dark
-        href="https://www.rafflecopter.com/rafl/display/f34912162/?widget_template=5a2166cc8a060bf50df94b01"
-        target="_blank"
-        rel="noopener"
-      ).blue.lighten-2
-        span Developer Giveaway
-        v-icon(right) mdi-cake-layered
+        href="/vuetify/sponsors-and-backers"
+        round
+        small
+        outline          
+        color="blue lighten-2"
+      )
+        span.caption Become a backer
       v-tooltip(
         v-for="social in socials"
         v-bind:key="social.icon"
