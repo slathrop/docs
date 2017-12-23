@@ -166,6 +166,7 @@ $display-breakpoints := {
 
 
       #footer-hero
+        position: relative
 
         @media $display-breakpoints.md-and-up
           padding: 2em 0;
@@ -176,18 +177,15 @@ $display-breakpoints := {
           left 0
           right 0
           bottom 0
-          height 100vw
+          height 50vw
           background url('/static/doc-images/slant-footer.svg') no-repeat  50% 100%
           background-size 100%
           @media $display-breakpoints.xs-only
             background-size 475%
-            height 300vw
           @media $display-breakpoints.sm-only
             background-size 225%
-            height 300vw
           @media $display-breakpoints.md-only
             background-size 140%
-            height 300vw
 
 
         img
