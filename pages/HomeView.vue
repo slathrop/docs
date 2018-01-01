@@ -56,14 +56,14 @@
                   v-icon(left).primary--text fa-github
                   span Github
     section#new-release.text-xs-center
-      v-card(tile flat color="secondary" dark)
+      v-card(tile flat color="primary" dark)
         v-card-text
-          span.subheading v1.0 alpha has been released!
+          span.subheading v1.0 <strong>beta</strong> has been released!
           v-btn(
             color="white"
             class="primary--text"
             light
-            href="https://github.com/vuetifyjs/vuetify/releases/tag/v1.0.0-alpha.1"
+            href="https://github.com/vuetifyjs/vuetify/releases/tag/v1.0.0-beta.1"
             target="_blank"
           ).ml-4 Learn more
           v-btn(

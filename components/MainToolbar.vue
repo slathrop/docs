@@ -20,9 +20,12 @@
       v-spacer
       v-btn(
         color="white"
-        href="https://github.com/vuetifyjs/vuetify/releases/tag/v1.0.0-alpha.1"
+        href="https://github.com/vuetifyjs/vuetify/releases/tag/v1.0.0-beta.1"
         target="_blank"
-      ).hidden-xs-only.mr-3.primary--text v1.0 alpha released!
+      ).hidden-xs-only.mr-3.primary--text
+        v-icon(left) mdi-bullhorn
+        span v1.0 beta released!
+        v-icon(right) mdi-star
     v-toolbar(
       :color="$store.state.currentColor"
       fixed
