@@ -287,6 +287,7 @@
             title: 'Community',
             action: 'people',
             items: [
+              { href: 'https://github.com/vuetifyjs/awesome-vuetify', title: 'Awesome Vuetify', target: '_blank' },
               {
                 href: 'https://chat.vuetifyjs.com',
                 target: '_blank',
