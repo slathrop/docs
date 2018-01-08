@@ -63,7 +63,7 @@
             color="white"
             class="primary--text"
             light
-            href="https://github.com/vuetifyjs/vuetify/releases/tag/v1.0.0-beta.1"
+            href="https://github.com/vuetifyjs/vuetify/releases/latest"
             target="_blank"
           ).ml-4 Learn more
           v-btn(
